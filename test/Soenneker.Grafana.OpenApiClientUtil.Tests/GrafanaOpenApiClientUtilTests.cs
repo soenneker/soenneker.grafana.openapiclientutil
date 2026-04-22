@@ -1,20 +1,19 @@
 using Soenneker.Grafana.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Grafana.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class GrafanaOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class GrafanaOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly IGrafanaOpenApiClientUtil _openapiclientutil;
 
-    public GrafanaOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public GrafanaOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<IGrafanaOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 

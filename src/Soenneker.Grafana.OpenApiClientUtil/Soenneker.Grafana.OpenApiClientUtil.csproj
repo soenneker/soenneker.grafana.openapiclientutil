@@ -41,7 +41,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Grafana.HttpClients" Version="4.0.84" />
+        <PackageReference Include="Soenneker.Grafana.HttpClients" Version="4.0.85" />
         <PackageReference Include="Soenneker.Grafana.OpenApiClient" Version="4.0.46" />
         <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.829" />
     </ItemGroup>

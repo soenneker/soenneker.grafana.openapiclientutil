@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Soenneker.Grafana.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached Grafana OpenAPI client backed by the shared authenticated HTTP provider.
 /// </summary>
 public interface IGrafanaOpenApiClientUtil: IDisposable, IAsyncDisposable
 {

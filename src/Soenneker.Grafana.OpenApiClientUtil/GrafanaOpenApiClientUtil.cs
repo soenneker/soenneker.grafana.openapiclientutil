@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Grafana.OpenApiClientUtil;
 
+/// <inheritdoc cref="IGrafanaOpenApiClientUtil" />
 public sealed class GrafanaOpenApiClientUtil : IGrafanaOpenApiClientUtil
 {
     private readonly AsyncSingleton<GrafanaOpenApiClient> _client;

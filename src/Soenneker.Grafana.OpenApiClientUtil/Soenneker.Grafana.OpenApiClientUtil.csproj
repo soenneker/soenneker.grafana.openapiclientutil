@@ -45,6 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Grafana.HttpClients" Version="11.0.173" />
-        <PackageReference Include="Soenneker.Grafana.OpenApiClient" Version="11.0.92" />
+        <PackageReference Include="Soenneker.Grafana.OpenApiClient" Version="11.0.93" />
     </ItemGroup>
 </Project>
